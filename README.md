@@ -19,3 +19,16 @@ Maybe also in Java afterwards.
 
 * Sorted Array Duplicate Finder
 
+
+## To-Dos
+
+* AVL-Tree
+* RB-Tree
+* Treap-Tree
+* Quick Sort
+* Heap Sort
+* Priority Queue
+* Stacks
+* C++ STL
+* Fast-Fournier Transformation
+
