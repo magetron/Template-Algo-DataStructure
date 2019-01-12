@@ -13,7 +13,7 @@ Maybe also in Java afterwards.
 * N-Ary Tree
 * Dijkstra's Algorithm
 * Merge Sort
-
+* AVL-Tree (Insertion)
 
 ## Extras (for Interview)
 
@@ -22,7 +22,7 @@ Maybe also in Java afterwards.
 
 ## To-Dos
 
-* AVL-Tree
+* AVL-Tree (Deletion)
 * RB-Tree
 * Treap-Tree
 * Quick Sort
