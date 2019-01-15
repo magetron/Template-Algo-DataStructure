@@ -60,4 +60,6 @@ int main () {
 	init_graph();
 	read_graph();
 	doDFS();
+	fclose(stdin);
+	fclose(stdout);
 }
