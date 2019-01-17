@@ -27,7 +27,7 @@ void dijkstra(int start) {
 		} 
 		s[u] = 1;
 		for (int j = 1; j <= n; j++) if ((!s[j] && a[u][j] < maxint) {
-			int newdist = dist[u] + c[u][j];
+			int newdist = dist[u] + a[u][j];
 			if (newdist < dist[j]) {
 				dist[j] = newdist[j];
 				prev[j] = u;
