@@ -18,7 +18,7 @@ Maybe also in Java afterwards.
 ## Extras (for Interview)
 
 * Sorted Array Duplicate Finder
-
+* Length of Longest Common Subsequence
 
 ## To-Dos
 
