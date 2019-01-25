@@ -14,6 +14,7 @@ Maybe also in Java afterwards.
 * Dijkstra's Algorithm
 * Merge Sort
 * AVL-Tree (Insertion)
+* Swap (Pass by reference in C and C++)
 
 ## Extras (for Interview)
 
