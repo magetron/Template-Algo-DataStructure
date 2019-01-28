@@ -13,6 +13,7 @@ Maybe also in Java afterwards.
 * N-Ary Tree
 * Dijkstra's Algorithm
 * Merge Sort
+* Quick Sort
 * AVL-Tree (Insertion)
 * Swap (Pass by reference in C and C++)
 
@@ -26,7 +27,6 @@ Maybe also in Java afterwards.
 * AVL-Tree (Deletion)
 * RB-Tree
 * Treap-Tree
-* Quick Sort
 * Heap Sort
 * Priority Queue
 * Stacks
