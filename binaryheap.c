@@ -13,14 +13,14 @@ void swap (int *a, int *b) {
 	*b = t;
 }
 
-void *swim (int *arr, int loc, int size) {
+void swim (int *arr, int loc, int size) {
 	while (loc > 0) {
 		if (arr[loc / 2] < arr[loc]) swap(&arr[loc / 2], &arr[loc]);
 		else break;
 	}
 }
 
-void *sink (int *arr, int loc, int size) {
+void sink (int *arr, int loc, int size) {
 	while (loc < size - 1) {
 		if (arr[loc * 2] > arr[loc]) swap(&arr[loc * 2], &arr[loc]);
 		else if (arr[loc * 2 + 1] > arr[loc]) swap(&arr[loc * 2 + 1], &arr[loc]);
@@ -29,7 +29,8 @@ void *sink (int *arr, int loc, int size) {
 }
 
 void print_heap(int *arr, int size) {
-	for (int i = 0; i < size - 1; i++) printf("%d ", arr[i]);
+	for (int i = 0; i < size; i++) printf("%d ", arr[i]);
+	printf("\n");
 }
 
 int *init_heap (int size) {
@@ -38,12 +39,41 @@ int *init_heap (int size) {
 }
 
 int main () {
-	int size;
-	scanf("%d", &size);
-	int heap = init_heap(size);
-	for (int i = 0; i < size; i++) {
+	int max_size;
+	scanf("%d", &max_size);
+	int *arr = init_heap(max_size);
+	int size = 0;
+	short int op = -1;
+	while (op != 4) {
+		printf("1. add new element to the heap\n");
+		printf("2. pop from top of the heap\n");
+		printf("3. print heap\n");
+		printf("4. exit\n");
+		scanf("%hd", &op);
 		int new_element;
-		scanf("%d", &new_element);
+		switch(op) {
+			case 1 : scanf("%d", &new_element);
+				 if (++size > max_size) {
+					 printf("ERROR : Segmentfault\n");
+					 break;
+				 } else {
+					 arr[size - 1] = new_element;
+					 swim(arr, size - 1, size);
+				 }
+				 printf("%d\n", size);
+				 break;
+			case 2 : printf("pop = %d\n", arr[0]);
+				 size--;
+				 arr[0] = arr[size];
+				 sink(arr, 0, size);
+				 break;
+			case 3 : print_heap(arr, size);
+				 break;
+		}
+	}
+	return 0;
+}
 
+				 
 
 	
