@@ -27,6 +27,7 @@ Maybe also in Java afterwards.
 * AVL-Tree (Deletion)
 * RB-Tree
 * Treap-Tree
+* Binary Heap (Working on this)
 * Heap Sort
 * Priority Queue
 * Stacks
