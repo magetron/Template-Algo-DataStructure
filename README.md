@@ -30,7 +30,7 @@ Maybe also in Java afterwards.
 * Binary Heap (Working on this)
 * Heap Sort
 * Priority Queue
-* Stacks
+* Stack
 * C++ STL
 * Fast-Fournier Transformation
 
