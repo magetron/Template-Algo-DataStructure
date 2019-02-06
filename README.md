@@ -16,6 +16,7 @@ Maybe also in Java afterwards.
 * Quick Sort
 * AVL-Tree (Insertion)
 * Swap (Pass by reference in C and C++)
+* Binary Heap
 
 ## Extras (for Interview)
 
@@ -27,7 +28,6 @@ Maybe also in Java afterwards.
 * AVL-Tree (Deletion)
 * RB-Tree
 * Treap-Tree
-* Binary Heap (Working on this)
 * Heap Sort
 * Priority Queue
 * Stack
