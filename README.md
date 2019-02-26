@@ -14,6 +14,7 @@ Maybe also in Java afterwards.
 * Dijkstra's Algorithm
 * Merge Sort
 * Quick Sort
+* Heap Sort
 * AVL-Tree (Insertion)
 * Swap (Pass by reference in C and C++)
 * Binary Heap
@@ -22,13 +23,13 @@ Maybe also in Java afterwards.
 
 * Sorted Array Duplicate Finder
 * Length of Longest Common Subsequence
+* Retrieve LCS via backtracing
 
 ## To-Dos
 
 * AVL-Tree (Deletion)
 * RB-Tree
 * Treap-Tree
-* Heap Sort
 * Priority Queue
 * Stack
 * C++ STL
