@@ -16,6 +16,7 @@ Maybe also in Java afterwards.
 * Merge Sort
 * Quick Sort
 * Heap Sort
+* Radix Sort
 * AVL-Tree (Insertion)
 * Swap (Pass by reference in C and C++)
 * Binary Heap
