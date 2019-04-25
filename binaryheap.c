@@ -23,12 +23,7 @@ void sink (int *arr, int loc, int size) {
 		if (arr[greater] > arr[loc]) {
 			swap(&arr[greater], &arr[loc]);
 			loc = greater;
-		}
-		else if (arr[greater] > arr[loc]) {
-			swap(&arr[greater], &arr[loc]);
-			loc = greater;
-		}
-		else break;
+		} else break;
 	}
 }
 
@@ -83,7 +78,3 @@ int main () {
 	//fclose(stdin);
 	return 0;
 }
-
-				 
-
-	
