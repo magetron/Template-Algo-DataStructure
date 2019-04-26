@@ -26,6 +26,7 @@ Maybe also in Java afterwards.
 * Sorted Array Duplicate Finder
 * Length of Longest Common Subsequence
 * Retrieve LCS via backtracing
+* Hanoi Problem
 
 ## To-Dos
 
