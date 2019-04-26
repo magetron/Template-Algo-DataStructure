@@ -27,6 +27,7 @@ Maybe also in Java afterwards.
 * Length of Longest Common Subsequence
 * Retrieve LCS via backtracing
 * Hanoi Problem
+* Edit distance between two strings
 
 ## To-Dos
 
