@@ -12,6 +12,7 @@ Maybe also in Java afterwards.
 * Depth First Search
 * N-Ary Tree
 * Dijkstra's Algorithm
+* Floyd-Warshall's Algorithm
 * Insertion Sort
 * Merge Sort
 * Quick Sort
