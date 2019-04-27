@@ -28,6 +28,7 @@ Maybe also in Java afterwards.
 * Retrieve LCS via backtracing
 * Hanoi Problem
 * Edit distance between two strings
+* Matrix Chain Multiplication DP
 
 ## To-Dos
 
