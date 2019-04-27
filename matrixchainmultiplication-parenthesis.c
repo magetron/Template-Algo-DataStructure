@@ -21,7 +21,7 @@ int matrix_chain_multiplication (int *p, int size) {
     int cp_matrix[size - 1][size - 1];
     for (int i = 0; i < size - 1; i++) cp_matrix[i][i] = 0;
     for (int len = 2; len < size; len++) 
-        for (int i = 1; i <= size - 1; i++) {
+        for (int i = 1; i <= size - len + 1; i++) {
             int j = i + len - 1;
             cp_matrix[i - 1][j - 1] = INT_MAX;
             for (int k = i; k < j; k++) {
