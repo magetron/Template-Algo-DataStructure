@@ -29,6 +29,7 @@ Maybe also in Java afterwards.
 * Hanoi Problem
 * Edit distance between two strings
 * Matrix Chain Multiplication DP
+* Matrix Chain Multiplication DP - with Parenthesis output
 
 ## To-Dos
 
