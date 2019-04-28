@@ -21,6 +21,7 @@ Maybe also in Java afterwards.
 * AVL-Tree (Insertion)
 * Swap (Pass by reference in C and C++)
 * Binary Heap
+* Borrows Wheeler Transformation (Character Clustering)
 
 ## Extras (for Interview)
 
