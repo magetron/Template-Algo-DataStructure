@@ -32,6 +32,7 @@ Maybe also in Java afterwards.
 * Edit distance between two strings
 * Matrix Chain Multiplication DP
 * Matrix Chain Multiplication DP - with Parenthesis output
+* BST, given node x, find the closest in-order predecessor that is smaller than x
 
 ## To-Dos
 
