@@ -2,50 +2,41 @@
 #define MAX_LENGTH 2000005
 using namespace std;
 
+
 vector<int> build_lps (string& p) {
 	vector<int> lps(p.length());
 	int i = 0;
+	lps[0] = 0;
 	int j = 1;
 	while (j < p.length()) {
-		if (p.at(i) == p.at(j)) {
-			lps[j] = lps[j - 1] + 1;
+		if (p.at(j) == p.at(i)) {
 			i++;
+			lps[j] = i;
+			j++;
+		} else if (i != 0) i = lps[i - 1];
+		else {
+			lps[j] = 0;
+			j++;
 		}
-		j++;
 	}
 	return lps;
 }
 
-void kmp (string& s, string& p, vector<int>& lps, vector<int>& ans) {
+void kmp (string& s, string& p) {
+	vector<int> lps = build_lps(p);
 	int i = 0;
 	int j = 0;
 	while (i < s.length()) {
-		//cout << i << endl;
-		while (i < s.length() && j < p.length() && s.at(i) == p.at(j)) {
-			i++; j++;
-		}
-		if (j == p.length()) ans.push_back(i - p.length() + 1);
-		if (j != 0) j = lps[j - 1]; else i++;
+		while (i < s.length() && j < p.length() && s[i] == p[j]) { i++; j++; }
+		if (j == p.length()) cout << i - p.length() << endl;
+		if (j != 0) j = lps[j - 1]; else i = i + 1;
 	}
 }
 
-void match (string& s, string& p) {
-	vector<int> lps = build_lps(p);
-	vector<int> ans;
-	kmp(s, p, lps, ans);
-	if (ans.size() != 0) {
-		cout << ans.size() << endl;
-		for (auto it = ans.begin(); it != ans.end(); it++) cout << *it << " ";
-		cout << endl << endl;
-	} else {
-		cout << "Not Found" << endl;
-		cout << endl;
-	}
-}
 
 int main () {
-	string s("abxababxabc");
+	string s("abxababxabcababxabc");
 	string p("abxabc");
-	match(s, p);
+	kmp(s, p);
 	return 0;
 }
