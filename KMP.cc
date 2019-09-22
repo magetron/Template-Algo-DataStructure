@@ -35,8 +35,8 @@ void kmp (string& s, string& p) {
 
 
 int main () {
-	string s("abxababxabcababxabc");
-	string p("abxabc");
+	string s("hello");
+	string p("ll");
 	kmp(s, p);
 	return 0;
 }
