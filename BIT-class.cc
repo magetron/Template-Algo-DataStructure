@@ -49,7 +49,6 @@ class RangeBIT {
 		}
 		
 		int sum (int pos) {
-			pos--;
 			return bit1.get(pos) * pos + bit2.get(pos);
 		}
 
