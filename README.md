@@ -22,6 +22,8 @@ Maybe also in Java afterwards.
 * Swap (Pass by reference in C and C++)
 * Binary Heap
 * Borrows Wheeler Transformation (Character Clustering)
+* Binary Index Tree
+* Eval function using RPN
 
 ## Extras (for Interview)
 
@@ -39,8 +41,6 @@ Maybe also in Java afterwards.
 * AVL-Tree (Deletion)
 * RB-Tree
 * Treap-Tree
-* Priority Queue
-* Stack
 * C++ STL
 * Fast-Fournier Transformation
 
