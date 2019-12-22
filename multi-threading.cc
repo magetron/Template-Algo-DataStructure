@@ -1,5 +1,6 @@
 #include <iostream>
 #include <thread>
+#include <mutex>
 
 using namespace std;
 
@@ -15,7 +16,7 @@ class Fctor {
 		}
 };
 
-int main () {
+int main1 () {
 	string s = "Hello World!";
 
 	thread t0((Fctor()), ref(s)); // start running t1
@@ -34,6 +35,31 @@ int main () {
 	cout << t0.get_id() << endl;
 
 	cout << thread::hardware_concurrency() << endl;
+
+	return 0;
+}
+
+mutex mu;
+
+inline void shared_print (string msg, int id) {
+	mu.lock();
+	cout << msg << id << endl;
+	mu.unlock();
+}
+
+
+void func1 () {
+	for (int i = 0; i > -100; i--)
+		shared_print(string("From t1: "), i);		
+}
+
+int main () {
+	thread t1(func1);
+
+	for (int i = 0; i < 100; i++)
+		shared_print(string("From main: "), i);	
+
+	t1.join();
 
 	return 0;
 }
